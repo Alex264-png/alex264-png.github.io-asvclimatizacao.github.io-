@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,117 +7,87 @@
 
 <style>
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    text-align: center;
+    background-color: #f4f4f4;
 }
 
-/* CABEÇALHO */
+/* TOPO */
 header {
-    background-color: #0a4c8a;
+    background-color: #0d6efd;
     color: white;
-    padding: 50px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    margin-top: 15px;
-    font-size: 18px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 /* SEÇÕES */
 section {
-    padding: 60px 20px;
-}
-
-h2 {
-    color: #0a4c8a;
-    margin-bottom: 40px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 /* SERVIÇOS */
-.servicos {
-    background-color: #f2f2f2;
-}
-
-.cards {
+.servicos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
+.servico {
     background-color: white;
     width: 300px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-    transition: transform 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.servico h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.card h3 {
-    text-align: center;
-    color: #0a4c8a;
-    margin: 0 0 20px 0;
-    position: relative;
-}
-
-.card h3 img {
-    position: absolute;
-    right: 0;
-    top: -5px;
+.servico img {
     width: 40px;
-}
-
-.card p {
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: left;
 }
 
 /* BOTÕES */
 .botao {
     display: inline-block;
     margin: 10px;
-    padding: 12px 25px;
-    background-color: #0a4c8a;
+    padding: 12px 20px;
+    background-color: #0d6efd;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
 .botao:hover {
-    background-color: #06325c;
+    background-color: #084298;
 }
 
-/* RODAPÉ */
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    font-size: 14px;
-}
-
-/* BOTÃO WHATSAPP FLUTUANTE */
+/* WHATSAPP FLUTUANTE */
 .whatsapp-float {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
 }
 </style>
 </head>
@@ -125,103 +95,88 @@ footer {
 <body>
 
 <header>
-<h1>ASV Climatização e Refrigeração</h1>
-<p>
-Instalação, conserto e limpeza de ar condicionado.  
-Conserto de geladeiras, freezer, máquinas de gelo, bebedouros, máquinas de lavar,
-sistemas VRF, chillers, fancoils e aparelhos portáteis.
-</p>
+    <h1>ASV Climatização e Refrigeração</h1>
+    <p>Instalação • Manutenção • Higienização • Projetos</p>
 </header>
 
 <section>
-<h2>Sobre a Empresa</h2>
-<p>
-A ASV Climatização e Refrigeração é uma empresa que atua com responsabilidade,
-cuidado e seriedade no atendimento. Nosso compromisso é oferecer soluções eficientes,
-seguras e de qualidade, sempre buscando a satisfação total de nossos clientes.
+    <h2>Solicite um orçamento agora</h2>
+    <p>Gostaria de uma consultoria em relação a defeitos, projeto para instalação e manutenção.</p>
 
-Contamos com técnicos certificados, com mais de 20 anos de experiência na área,
-formação técnica e diversos cursos de especialização na profissão. Trabalhamos
-seguindo padrões técnicos e normas de segurança, garantindo um serviço profissional,
-confiável e executado por quem realmente entende do assunto.
-</p>
-</section>
+    <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" target="_blank" class="botao">
+        Solicitar Orçamento
+    </a>
 
-<section class="servicos">
-<h2>Nossos Serviços</h2>
+    <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20uma%20consultoria%20sobre%20defeitos" target="_blank" class="botao">
+        Consultoria e Dúvidas sobre Defeitos
+    </a>
 
-<div class="cards">
-
-<div class="card">
-<h3>Instalação <img src="Logo-asv.png"></h3>
-<p>
-Trabalhamos com instalação de máquinas Split e MultiSplit, garantindo segurança,
-eficiência e funcionamento correto do equipamento.
-</p>
-</div>
-
-<div class="card">
-<h3>Manutenção <img src="Logo-asv.png"></h3>
-<p>
-Realizamos manutenção preventiva e corretiva para evitar falhas,
-aumentar a durabilidade e melhorar o desempenho do equipamento.
-</p>
-</div>
-
-<div class="card">
-<h3>Higienização <img src="Logo-asv.png"></h3>
-<p>
-Serviço completo de limpeza técnica, eliminando sujeiras,
-fungos e bactérias que prejudicam a saúde e o rendimento do aparelho.
-</p>
-</div>
-
-<div class="card">
-<h3>Refrigeração <img src="Logo-asv.png"></h3>
-<p>
-Conserto de geladeiras, freezers, máquinas de gelo, bebedouros,
-máquinas de lavar e equipamentos de refrigeração em geral.
-</p>
-</div>
-
-<div class="card">
-<h3>Sistemas Especiais <img src="Logo-asv.png"></h3>
-<p>
-Atendimento especializado em sistemas VRF, chillers,
-fancoils e equipamentos de climatização comercial e industrial.
-</p>
-</div>
-
-</div>
+    <a href="mailto:alexcaldasguarani@gmail.com" class="botao">
+        Enviar Email
+    </a>
 </section>
 
 <section>
-<h2>Precisa de atendimento personalizado?</h2>
+    <h2>Nossos Serviços</h2>
 
-<p>
-Solicite um orçamento agora.<br><br>
-Gostaria de uma consultoria em relação a defeitos, projeto para instalação e manutenção.
-</p>
+    <div class="servicos-container">
 
-<br>
+        <div class="servico">
+            <h3>
+                Instalação
+                <img src="Logo-asv.png">
+            </h3>
+            <p>Trabalhamos com instalação de máquinas Split e MultiSplit, seguindo normas técnicas e garantindo segurança e eficiência.</p>
+        </div>
 
-<a href="https://wa.me/21998729862" class="botao">
-Solicitar Orçamento
-</a>
+        <div class="servico">
+            <h3>
+                Manutenção Preventiva
+                <img src="Logo-asv.png">
+            </h3>
+            <p>Realizamos manutenção preventiva para aumentar a vida útil do equipamento e evitar falhas inesperadas.</p>
+        </div>
 
-<a href="mailto:alexcaldasguarani@gmail.com" class="botao">
-Consultoria e Dúvidas
-</a>
+        <div class="servico">
+            <h3>
+                Higienização
+                <img src="Logo-asv.png">
+            </h3>
+            <p>Higienização completa para melhorar a qualidade do ar e evitar problemas respiratórios.</p>
+        </div>
 
+        <div class="servico">
+            <h3>
+                Projetos
+                <img src="Logo-asv.png">
+            </h3>
+            <p>Elaboração de projetos para instalação residencial, comercial e industrial.</p>
+        </div>
+
+    </div>
 </section>
 
-<footer>
-© 2026 ASV Climatização e Refrigeração - Todos os direitos reservados.
-</footer>
+<section>
+    <h2>Sobre a Empresa</h2>
+    <p>
+    A ASV Climatização e Refrigeração é uma empresa que atua com responsabilidade,
+    cuidado e seriedade no atendimento. Nosso compromisso é oferecer soluções eficientes,
+    seguras e de qualidade, sempre buscando a satisfação total de nossos clientes.
+    </p>
+
+    <p>
+    Contamos com técnicos certificados, com mais de 20 anos de experiência na área,
+    formação técnica e diversos cursos de especialização na profissão. Trabalhamos
+    seguindo padrões técnicos e normas de segurança, garantindo um serviço profissional,
+    confiável e executado por quem realmente entende do assunto.
+    </p>
+</section>
 
 <!-- BOTÃO WHATSAPP FLUTUANTE -->
-<a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="60" alt="WhatsApp">
+<a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" 
+   class="whatsapp-float" 
+   target="_blank">
+   💬
 </a>
 
 </body>
