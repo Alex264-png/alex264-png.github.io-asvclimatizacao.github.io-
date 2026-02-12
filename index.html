@@ -31,26 +31,47 @@ header p {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 h2 {
     color: #0a4c8a;
+    margin-bottom: 40px;
 }
+
+/* QUADROS DE SERVIÇOS */
 
 .servicos {
     background-color: #f2f2f2;
 }
 
-.servicos ul {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.servicos li {
-    margin: 10px 0;
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
 }
+
+.card h3 {
+    color: #0a4c8a;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* BOTÕES */
 
 .botao {
     display: inline-block;
@@ -95,24 +116,59 @@ sistemas VRF, chillers, fancoils e aparelhos portáteis.
 <section>
 <h2>Sobre a Empresa</h2>
 <p>
-Trabalhamos com todos os tipos de ar condicionado e aparelhos de climatização e refrigeração
-na área residencial, comercial e industrial.
+A ASV Climatização e Refrigeração é uma empresa que atua com responsabilidade,
+cuidado e seriedade no atendimento. Nosso compromisso é oferecer soluções eficientes,
+seguras e de qualidade, sempre buscando a satisfação total de nossos clientes.
+Prezamos pela transparência, pontualidade e excelência técnica em cada serviço realizado.
 </p>
 </section>
 
 <section class="servicos">
 <h2>Nossos Serviços</h2>
 
-<ul>
-<li>✔ Instalação de ar condicionado</li>
-<li>✔ Manutenção preventiva e corretiva</li>
-<li>✔ Higienização e limpeza técnica</li>
-<li>✔ Conserto de geladeiras e freezers</li>
-<li>✔ Sistemas VRF, chillers e fancoils</li>
-<li>✔ Máquinas de gelo e bebedouros</li>
-<li>✔ Equipamentos residenciais, comerciais e industriais</li>
-</ul>
+<div class="cards">
 
+<div class="card">
+<h3>Instalação</h3>
+<p>
+Trabalhamos com instalação de máquinas Split e MultiSplit, garantindo segurança,
+eficiência e funcionamento correto do equipamento.
+</p>
+</div>
+
+<div class="card">
+<h3>Manutenção</h3>
+<p>
+Realizamos manutenção preventiva e corretiva para evitar falhas,
+aumentar a durabilidade e melhorar o desempenho do equipamento.
+</p>
+</div>
+
+<div class="card">
+<h3>Higienização</h3>
+<p>
+Serviço completo de limpeza técnica, eliminando sujeiras,
+fungos e bactérias que prejudicam a saúde e o rendimento do aparelho.
+</p>
+</div>
+
+<div class="card">
+<h3>Refrigeração</h3>
+<p>
+Conserto de geladeiras, freezers, máquinas de gelo, bebedouros,
+máquinas de lavar e equipamentos de refrigeração em geral.
+</p>
+</div>
+
+<div class="card">
+<h3>Sistemas Especiais</h3>
+<p>
+Atendimento especializado em sistemas VRF, chillers,
+fancoils e equipamentos de climatização comercial e industrial.
+</p>
+</div>
+
+</div>
 </section>
 
 <section>
