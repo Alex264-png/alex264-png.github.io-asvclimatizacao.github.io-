@@ -36,10 +36,28 @@ section {
 
 .servico {
     background-color: white;
-    width: 280px;
+    width: 300px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.servico-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servico-titulo h3 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.servico-titulo img {
+    width: 60px;   /* TAMANHO MAIOR PARA APARECER BEM */
+    height: auto;
 }
 
 /* BOTÕES */
@@ -125,22 +143,34 @@ section {
     <div class="servicos-container">
 
         <div class="servico">
-            <h3>Instalação</h3>
+            <div class="servico-titulo">
+                <h3>Instalação</h3>
+                <img src="Logo-asv.png" alt="Logo ASV">
+            </div>
             <p>Instalação de equipamentos Split e MultiSplit seguindo normas técnicas e garantindo segurança e eficiência.</p>
         </div>
 
         <div class="servico">
-            <h3>Manutenção Preventiva</h3>
+            <div class="servico-titulo">
+                <h3>Manutenção Preventiva</h3>
+                <img src="Logo-asv.png" alt="Logo ASV">
+            </div>
             <p>Serviços de manutenção preventiva para aumentar a vida útil do equipamento e evitar falhas inesperadas.</p>
         </div>
 
         <div class="servico">
-            <h3>Higienização</h3>
+            <div class="servico-titulo">
+                <h3>Higienização</h3>
+                <img src="Logo-asv.png" alt="Logo ASV">
+            </div>
             <p>Higienização completa para melhorar a qualidade do ar e proteger a saúde da sua família ou empresa.</p>
         </div>
 
         <div class="servico">
-            <h3>Projetos</h3>
+            <div class="servico-titulo">
+                <h3>Projetos</h3>
+                <img src="Logo-asv.png" alt="Logo ASV">
+            </div>
             <p>Elaboração de projetos para instalação residencial, comercial e industrial.</p>
         </div>
 
