@@ -8,67 +8,110 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* TOPO */
 header {
-    background-color: #0d6efd;
+    background: linear-gradient(135deg, #0d6efd, #084298);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* SEÇÕES */
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
     text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* FUNDO ALTERNADO */
+.bg-light {
+    background-color: #ffffff;
+}
+
+.bg-gray {
+    background-color: #f1f3f5;
+}
+
+/* SOBRE */
+.sobre p {
+    text-align: center;
+    max-width: 900px;
+    margin: 10px auto;
+    line-height: 1.6;
 }
 
 /* SERVIÇOS */
 .servicos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .servico {
     background-color: white;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: left;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
 }
 
 .servico-titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .servico-titulo h3 {
     margin: 0;
-    flex: 1;
-    text-align: center;
+    font-size: 20px;
 }
 
 .servico-titulo img {
-    width: 60px;
-    height: auto;
+    width: 65px;
 }
 
 /* BOTÕES */
+.botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .botao {
     display: inline-block;
     margin: 10px;
-    padding: 12px 20px;
+    padding: 14px 28px;
     background-color: #0d6efd;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .botao:hover {
@@ -80,8 +123,8 @@ footer {
     background-color: #0d6efd;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 30px 20px;
+    font-size: 14px;
 }
 
 /* WHATSAPP FLUTUANTE */
@@ -115,8 +158,8 @@ footer {
     <p>Instalação • Manutenção • Higienização • Projetos</p>
 </header>
 
-<!-- SOBRE A EMPRESA -->
-<section>
+<!-- SOBRE -->
+<section class="bg-light sobre">
     <h2>Sobre a Empresa</h2>
     <p>
     A ASV Climatização e Refrigeração é uma empresa que atua com responsabilidade,
@@ -131,8 +174,8 @@ footer {
     </p>
 </section>
 
-<!-- NOSSOS SERVIÇOS -->
-<section>
+<!-- SERVIÇOS -->
+<section class="bg-gray">
     <h2>Nossos Serviços</h2>
 
     <div class="servicos-container">
@@ -172,28 +215,31 @@ footer {
     </div>
 </section>
 
-<!-- ORÇAMENTO (AGORA EMBAIXO) -->
-<section>
+<!-- ORÇAMENTO -->
+<section class="bg-light">
     <h2>Solicite um Orçamento</h2>
-    <p>Gostaria de uma consultoria em relação a defeitos, projeto para instalação e manutenção.</p>
+    <p style="text-align:center;">
+        Gostaria de uma consultoria em relação a defeitos, projeto para instalação e manutenção.
+    </p>
 
-    <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" target="_blank" class="botao">
-        Solicitar Orçamento
-    </a>
+    <div class="botoes">
+        <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" target="_blank" class="botao">
+            Solicitar Orçamento
+        </a>
 
-    <a href="mailto:alexcaldasguarani@gmail.com" class="botao">
-        Enviar Email
-    </a>
+        <a href="mailto:alexcaldasguarani@gmail.com" class="botao">
+            Enviar Email
+        </a>
+    </div>
 </section>
 
 <!-- RODAPÉ -->
 <footer>
-    © 2026 ASV Climatização e Refrigeração  
-    <br>
+    © 2026 ASV Climatização e Refrigeração<br>
     Atendendo em todo o Rio de Janeiro
 </footer>
 
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" 
    class="whatsapp-float" 
    target="_blank">
