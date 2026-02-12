@@ -55,11 +55,11 @@ h2 {
 
 .card {
     background-color: white;
-    width: 280px;
-    padding: 20px;
+    width: 300px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: left;
+    position: relative;
     transition: transform 0.3s;
 }
 
@@ -68,16 +68,23 @@ h2 {
 }
 
 .card h3 {
+    text-align: center;
     color: #0a4c8a;
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin: 0 0 20px 0;
+    position: relative;
 }
 
 .card h3 img {
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 40px; /* tamanho maior */
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 /* BOTÕES */
@@ -142,7 +149,7 @@ Prezamos pela transparência, pontualidade e excelência técnica em cada servi�
 <div class="cards">
 
 <div class="card">
-<h3><img src="Logo-asv.png"> Instalação</h3>
+<h3>Instalação <img src="Logo-asv.png"></h3>
 <p>
 Trabalhamos com instalação de máquinas Split e MultiSplit, garantindo segurança,
 eficiência e funcionamento correto do equipamento.
@@ -150,7 +157,7 @@ eficiência e funcionamento correto do equipamento.
 </div>
 
 <div class="card">
-<h3><img src="Logo-asv.png"> Manutenção</h3>
+<h3>Manutenção <img src="Logo-asv.png"></h3>
 <p>
 Realizamos manutenção preventiva e corretiva para evitar falhas,
 aumentar a durabilidade e melhorar o desempenho do equipamento.
@@ -158,7 +165,7 @@ aumentar a durabilidade e melhorar o desempenho do equipamento.
 </div>
 
 <div class="card">
-<h3><img src="Logo-asv.png"> Higienização</h3>
+<h3>Higienização <img src="Logo-asv.png"></h3>
 <p>
 Serviço completo de limpeza técnica, eliminando sujeiras,
 fungos e bactérias que prejudicam a saúde e o rendimento do aparelho.
@@ -166,7 +173,7 @@ fungos e bactérias que prejudicam a saúde e o rendimento do aparelho.
 </div>
 
 <div class="card">
-<h3><img src="Logo-asv.png"> Refrigeração</h3>
+<h3>Refrigeração <img src="Logo-asv.png"></h3>
 <p>
 Conserto de geladeiras, freezers, máquinas de gelo, bebedouros,
 máquinas de lavar e equipamentos de refrigeração em geral.
@@ -174,7 +181,7 @@ máquinas de lavar e equipamentos de refrigeração em geral.
 </div>
 
 <div class="card">
-<h3><img src="Logo-asv.png"> Sistemas Especiais</h3>
+<h3>Sistemas Especiais <img src="Logo-asv.png"></h3>
 <p>
 Atendimento especializado em sistemas VRF, chillers,
 fancoils e equipamentos de climatização comercial e industrial.
