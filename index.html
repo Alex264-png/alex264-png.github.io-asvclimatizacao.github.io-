@@ -36,13 +36,6 @@
       font-size: 1.1rem;
     }
 
-    .logo-watermark {
-      max-width: 500px;
-      width: 80%;
-      margin-top: 60px;
-      opacity: 0.08;
-    }
-
     section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -72,6 +65,40 @@
       padding: 60px 20px;
     }
 
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn-orcamento {
+      background: #0f766e;
+    }
+
+    .btn-consultoria {
+      background: #1e40af;
+    }
+
+    /* LOGO BOTÃO NO FINAL */
+    .logo-botao {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .logo-botao img {
+      width: 120px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .logo-botao img:hover {
+      transform: scale(1.1);
+    }
+
     footer {
       background: #111827;
       color: #fff;
@@ -92,24 +119,6 @@
       font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 28px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .btn-orcamento {
-      background: #0f766e;
-    }
-
-    .btn-consultoria {
-      background: #1e40af;
-    }
   </style>
 </head>
 
@@ -128,9 +137,6 @@
        class="btn btn-orcamento">
       Falar no WhatsApp
     </a>
-
-    <!-- LOGO COMO MARCA D'ÁGUA -->
-    <img src="Logo-asv.png" class="logo-watermark" alt="Logo ASV">
   </header>
 
   <section>
@@ -191,6 +197,14 @@
       </a>
 
     </div>
+
+    <!-- LOGO COMO BOTÃO -->
+    <div class="logo-botao">
+      <a href="https://wa.me/5521998729862?text=Olá,%20vim%20pelo%20site%20da%20ASV.">
+        <img src="Logo-asv.png" alt="Logo ASV - Clique para WhatsApp">
+      </a>
+    </div>
+
   </section>
 
   <footer>
