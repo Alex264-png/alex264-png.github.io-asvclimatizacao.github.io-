@@ -6,45 +6,66 @@
 <title>ASV Climatização e Refrigeração</title>
 
 <style>
-body {
+
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
 /* TOPO */
 header {
-    background: linear-gradient(135deg, #0d6efd, #084298);
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 32px;
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 header p {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    opacity: 0.95;
 }
 
 /* SEÇÕES */
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 1100px;
     margin: auto;
 }
 
 section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
 }
 
-/* FUNDO ALTERNADO */
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* FUNDOS */
 .bg-light {
     background-color: #ffffff;
 }
@@ -57,99 +78,126 @@ section h2 {
 .sobre p {
     text-align: center;
     max-width: 900px;
-    margin: 10px auto;
-    line-height: 1.6;
+    margin: 15px auto;
+    font-size: 18px;
 }
 
 /* SERVIÇOS */
 .servicos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 .servico {
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
 }
 
 .servico:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 .servico-titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .servico-titulo h3 {
-    margin: 0;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .servico-titulo img {
-    width: 65px;
+    width: 75px;
+}
+
+/* ORÇAMENTO */
+section p {
+    font-size: 18px;
 }
 
 /* BOTÕES */
 .botoes {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .botao {
     display: inline-block;
-    margin: 10px;
-    padding: 14px 28px;
-    background-color: #0d6efd;
+    margin: 12px;
+    padding: 16px 35px;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.3);
 }
 
 .botao:hover {
-    background-color: #084298;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(13,110,253,0.4);
 }
 
 /* RODAPÉ */
 footer {
-    background-color: #0d6efd;
+    background: #0a58ca;
     color: white;
     text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
+    padding: 40px 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
 
-/* WHATSAPP FLUTUANTE (COM ÍCONE OFICIAL) */
+/* WHATSAPP FLUTUANTE */
 .whatsapp-float {
     position: fixed;
-    width: 65px;
-    height: 65px;
-    bottom: 20px;
-    right: 20px;
+    width: 70px;
+    height: 70px;
+    bottom: 25px;
+    right: 25px;
     background-color: #25D366;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     z-index: 100;
+    transition: 0.3s;
 }
 
 .whatsapp-float img {
-    width: 38px;
+    width: 40px;
 }
 
 .whatsapp-float:hover {
+    transform: scale(1.1);
     background-color: #1ebe5d;
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+
 </style>
 </head>
 
@@ -235,13 +283,11 @@ footer {
     </div>
 </section>
 
-<!-- RODAPÉ -->
 <footer>
     © 2026 ASV Climatização e Refrigeração<br>
     Atendendo em todo o Rio de Janeiro
 </footer>
 
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
 <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento"
    class="whatsapp-float"
    target="_blank">
