@@ -100,3 +100,190 @@ section h2::after {
 }
 
 .servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.servico h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* BOTÕES */
+.botoes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao {
+    display: inline-block;
+    margin: 12px;
+    padding: 16px 35px;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.3);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+footer {
+    background: #0a58ca;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 15px;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    header h1 { font-size: 28px; }
+    header p { font-size: 16px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ASV Climatização e Refrigeração</h1>
+    <p><strong>Especialistas em Ar-Condicionado e Linha Branca no Rio de Janeiro</strong></p>
+    <p>Atendimento rápido • Técnicos certificados • Garantia no serviço</p>
+</header>
+
+<!-- SOBRE -->
+<section class="bg-light sobre">
+    <h2>Sobre a Empresa</h2>
+    <p>
+    A ASV Climatização e Refrigeração é uma empresa que atua com responsabilidade,
+    cuidado e seriedade no atendimento. Nosso compromisso é oferecer soluções eficientes,
+    seguras e de qualidade, sempre buscando a satisfação total de nossos clientes.
+    </p>
+
+    <p>
+    Contamos com técnicos certificados, com mais de 20 anos de experiência na área,
+    formação técnica e diversos cursos de especialização. Trabalhamos seguindo normas
+    técnicas e padrões de segurança, garantindo um serviço profissional e confiável.
+    </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="bg-gray">
+    <h2>Nossos Serviços</h2>
+
+    <div class="servicos-container">
+
+        <div class="servico">
+            <h3>Instalação</h3>
+            <p>Instalação de equipamentos Split e MultiSplit seguindo normas técnicas e garantindo segurança e eficiência.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Manutenção Preventiva</h3>
+            <p>Serviços de manutenção preventiva para aumentar a vida útil do equipamento e evitar falhas inesperadas.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Higienização</h3>
+            <p>Higienização completa para melhorar a qualidade do ar e proteger a saúde da sua família ou empresa.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Projetos</h3>
+            <p>Elaboração de projetos para instalação residencial, comercial e industrial.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Linha Branca</h3>
+            <p>Manutenção e reparos em geladeiras residenciais e industriais, freezers, máquinas de gelo, bebedouros e máquinas de lavar.</p>
+        </div>
+
+        <div class="servico">
+            <h3>Dúvidas Técnicas</h3>
+            <p>
+            Está com dúvidas sobre um defeito persistente? Instalação inacabada?
+            Precisa de uma segunda opinião profissional? A ASV oferece orientação
+            técnica especializada para identificar problemas e indicar a melhor solução.
+            </p>
+        </div>
+
+        <div class="servico">
+            <h3>Consultoria</h3>
+            <p>
+            Quer se informar para uma futura instalação ou manutenção? Precisa de
+            orientação sobre como operar seu Split, configurar a internet do aparelho
+            ou entender melhor o funcionamento do sistema? Oferecemos consultoria
+            clara e profissional para você tomar a melhor decisão.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DIFERENCIAL -->
+<section class="bg-light">
+    <h2>Por que escolher a ASV?</h2>
+    <div class="sobre">
+        <p>✔ Mais de 20 anos de experiência</p>
+        <p>✔ Técnicos certificados</p>
+        <p>✔ Atendimento rápido</p>
+        <p>✔ Garantia no serviço</p>
+        <p>✔ Pagamento facilitado</p>
+    </div>
+</section>
+
+<!-- ORÇAMENTO -->
+<section class="bg-gray">
+    <h2>Fale com um Técnico Agora</h2>
+    <div class="botoes">
+        <a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" target="_blank" class="botao">
+            Falar com Técnico no WhatsApp
+        </a>
+
+        <a href="mailto:alexcaldasguarani@gmail.com" class="botao">
+            Enviar Email
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 ASV Climatização e Refrigeração<br>
+    CNPJ: 63.074.786/0001-01<br>
+    Atendendo em todo o Rio de Janeiro
+</footer>
+
+<a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento"
+   class="whatsapp-float"
+   target="_blank">
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
