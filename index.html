@@ -127,22 +127,24 @@ footer {
     font-size: 14px;
 }
 
-/* WHATSAPP FLUTUANTE */
+/* WHATSAPP FLUTUANTE (COM ÍCONE OFICIAL) */
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    color: white;
     border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    line-height: 60px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
     z-index: 100;
-    text-decoration: none;
+}
+
+.whatsapp-float img {
+    width: 38px;
 }
 
 .whatsapp-float:hover {
@@ -239,11 +241,11 @@ footer {
     Atendendo em todo o Rio de Janeiro
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento" 
-   class="whatsapp-float" 
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5521998729862?text=Olá%20gostaria%20de%20um%20orçamento"
+   class="whatsapp-float"
    target="_blank">
-   💬
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
 </body>
